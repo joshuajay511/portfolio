@@ -219,6 +219,10 @@ form button:hover {
 }
 
 @media only screen and (max-width: 999px) {
+    .elementor:not(.elementor-edit-area-active) .elementor-hidden-phone {
+        display: block;
+        }
+
     nav {
         justify-content: center;
     }
@@ -269,6 +273,10 @@ form button:hover {
 }
 
 @media only screen and (max-width: 699px) {
+    .elementor:not(.elementor-edit-area-active) .elementor-hidden-phone {
+        display: block;
+        }
+
    nav ul li {
        padding: 8px 16px;
    }
