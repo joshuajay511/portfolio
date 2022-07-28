@@ -111,10 +111,10 @@
     <footer class="section" id="contact">
         <form name="contact" class="container" id="form" action="post" data-netlify="true">
             <h1>Contact</h1>
-            <input type="text" id="name" placeholder="Name" required>
-            <input type="email" id="email" placeholder="Email@Address.com" required>
-            <input type="tel" pattern="[0-9]{10}" id="phone" placeholder="Phone Number">
-            <textarea type="text" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+            <input type="text" id="name" placeholder="Name" required name="name">
+            <input type="email" id="email" placeholder="Email@Address.com" required name="email">
+            <input type="tel" pattern="[0-9]{10}" id="phone" placeholder="Phone Number" name="phone">
+            <textarea type="text" id="message" placeholder="Message" cols="30" rows="10" name="message"></textarea>
             <div data-netlify-recaptcha="true"></div>
             <button type="submit">Submit</button>
         </form>
