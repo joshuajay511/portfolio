@@ -227,6 +227,10 @@ form button:hover {
         margin-right: 0;
     }
 
+    nav ul li {
+        background-color: white;
+    }
+
     .hero {
         background-position: 25% 50%;
     }
