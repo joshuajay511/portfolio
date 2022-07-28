@@ -4,6 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     transition: .5s ease;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
 
 body {
@@ -266,10 +267,6 @@ form button:hover {
 
     #projects .container ul li .project {
         filter: saturate(100%);
-    }
-
-    form button {
-        cursor: none;
     }
 }
 
