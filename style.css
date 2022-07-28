@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: .5s ease;
+}
+
+body {
+    width: 100%;
+    max-width: 2000px;
+    background-image: linear-gradient(to right, #222, #333, #222, black);
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 8px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 8px 32px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid #333;
+    transition: .5s ease;
+}
+
+nav ul li:hover {
+    background-color: white;
+    padding: 8px 40px;
+    transition: .5s ease;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url(./img/BeFunky-photo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto auto;
+    border: 1px solid white;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 32px;
+}
+
+.section .container h1 {
+    text-align: center;
+    margin: 48px;
+    font-size: 48px;
+}
+
+.section .container h2 {
+    font-size: 24px;
+}
+
+.section .container p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 80ch;
+    padding: 32px;
+}
+
+#about .container .content {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 32px auto;
+}
+
+#about .container .content ul {
+    list-style: none;
+    line-height: 1.5;
+}
+
+#about .container .resume {
+    text-align: center;
+}
+
+#about .container .resume a {
+    border: 1px solid #333;
+    text-decoration: none;
+    padding: 8px 32px;
+    font-size: 24px;
+    color: black;
+    border-radius: 8px;
+    transition: .5s ease;
+}
+
+#about .container .resume a:hover{
+    background-color: white;
+    padding: 8px 40px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+#projects .container ul{
+    width: 100%;
+    display: flex; 
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#projects .container ul li {
+    width: 20%;
+    text-align: center;
+}
+
+#projects .container ul li .project {
+    width: 100%;
+    display: flexbox;
+    filter: saturate(15%);
+    transition: .5s ease;
+}
+
+#projects .container ul li .project:hover {
+    filter: saturate(100%);
+    transition: .5s ease;
+}
+
+#projects .container ul li .project img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+#projects .container ul li .project h2 {
+    margin: 16px;
+}
+
+#projects .container ul li .project ul li {
+    width: 40%;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 8px;
+    list-style: none;
+    text-align: center;
+    transition: .5s ease;
+}
+
+#projects .container ul li .project ul li:hover {
+    background-color: white;
+    font-size: 17px;
+    transition: .5s ease;
+}
+
+#projects .container ul li .project ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    width: 100%;
+    max-width: 600px;
+    margin: 16px auto;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+
+form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 8px 32px;
+    margin: 16px auto;
+    border-radius: 8px;
+}
+
+form button {
+    border: 1px solid #333;
+    padding: 8px 32px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: black;
+    border-radius: 8px;
+    transition: .5s ease;
+}
+
+form button:hover {
+    background-color: white;
+    padding: 8px 40px;
+    transition: .5s ease;
+}
+
+@media only screen and (max-width: 999px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        margin-right: 0;
+    }
+
+    .hero {
+        background-position: 25% 50%;
+    }
+
+    .section .container h1 {
+        text-align: center;
+        margin: 36px;
+        font-size: 36px;
+    }
+    
+    .section .container h2 {
+        font-size: 18px;
+    }
+
+    #projects .container ul{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    #projects .container ul li {
+        width: 40%;
+        margin-bottom: 16px;
+    }
+
+    #projects .container ul li {
+        justify-content: space-around;
+    }
+
+    #projects .container ul li .project ul {
+        flex-direction: row;
+    }
+
+    #projects .container ul li .project {
+        filter: saturate(100%);
+    }
+}
+
+@media only screen and (max-width: 699px) {
+   nav ul li {
+       padding: 8px 16px;
+   }
+
+   nav ul li:hover {
+       padding: 8px 16px;
+   }
+
+   .hero {
+       background-position: 32% 50%;
+   }
+   
+   .section {
+       height: auto;
+       min-height: 100vh;
+   }
+
+   .container {
+       max-width: 90%;
+       height: fit-content;
+   }
+
+   .section .container p {
+       padding: 32px 8px;
+       font-size: 14px;
+   }
+
+   #projects .container ul li {
+       width: 80%;
+   }
+
+   #about .container .content {
+       justify-content: space-between;
+   }
+}

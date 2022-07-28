@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Joshua Duryea</title>
+</head>
+<body>
+    
+    <header class="hero"></header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="section" id="about">
+        <section class="container">
+            <h1>About Me</h1>
+            <div class="resume">
+                <a href="./docs/Resume (2).pdf" target="_blank">Resume</a>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nemo facere explicabo, aliquam alias natus dolor odit libero laborum nisi iste pariatur eveniet veniam. Deserunt, eveniet dolor, harum aliquid dolores amet non molestias necessitatibus mollitia laboriosam consequuntur? Nobis similique nam reiciendis saepe voluptatibus corrupti magnam nihil aut quibusdam facere. Numquam!</p>
+            <div class="content">
+                <div class="col">
+                    <h2>Scripting</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>AmpScript</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Software</h2>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Git</li>
+                        <li>Adobe suite</li>
+                        <li>SalesForce</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Experience</h2>
+                    <ul>
+                        <li>Marketing</li>
+                        <li>Sales</li>
+                        <li>Service</li>
+                        <li>CRM</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="section" id="projects">
+        <section class="container">
+            <h1>Projects</h1>
+            <ul>
+                <li>
+                    <div class="project">
+                        <img src="./img/landingPage.png">
+                        <h2>Landing Page</h2>
+                        <ul>
+                            <li><a href="" target="_blank">Source Code</a></li>
+                            <li><a href="./projects/appleLlandingPage/index.html" target="_blank">View Project</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="project">
+                        <img src="./img/promotional.png">
+                        <h2>Promotional Email</h2>
+                        <ul>
+                            <li><a href="" target="_blank">Source Code</a></li>
+                            <li><a href="./projects/emailZoomClone/index.html" target="_blank">View Project</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="project">
+                        <img src="./img/receipt.png">
+                        <h2>Email Receipt</h2>
+                        <ul>
+                            <li><a href="" target="_blank">Source Code</a></li>
+                            <li><a href="./projects/emailReceipt/" target="_blank">View Project</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="project">
+                        <img src="./img/newsletter.png">
+                        <h2>Email Newsletter</h2>
+                        <ul>
+                            <li><a href="" target="_blank">Source Code</a></li>
+                            <li><a href="./projects/emailNewsletter/" target="_blank">View Project</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="section" id="contact">
+        <form action="form.php" class="container" id="form" method="post">
+            <h1>Contact</h1>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email@Address.com" required>
+            <input type="tel" pattern="[0-9]{10}" id="phone" placeholder="Phone Number">
+            <textarea type="text" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+</body>
+</html>
