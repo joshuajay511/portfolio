@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-container {
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+nav .fa {
+    font-size: 3rem;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+    list-style: none;
+}
+
+nav ul li a {
+    color:hsl(0, 0%, 2%);
+    font-size: 1rem;
+    padding: 1rem;
+    transition: .5s;
+}
+
+nav ul li a:hover {
+    background: hsl(0, 0%, 2%);
+    color: hsl(0, 0%, 98%);
+}
+
+button {
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    font-weight: bold;
+}
+
+.jewel-btn {
+    background: hsl(0, 64%, 40%);
+}
+
+.pastel-btn {
+    background: hsl(330, 82%, 83%);
+}
+
+.earth-btn {
+    background: hsl(144, 30%, 47%);
+}
+
+.neutral-btn {
+    background: hsl(57, 17%, 51%);
+}
+
+.fluorescent-btn {
+    background: hsl(288, 80%, 53%);
+}
+
+.shade-btn {
+    background: hsl(250, 5%, 50%);
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.color {
+    flex-basis: 25%;
+    display: flexbox;
+    text-align: center;
+    padding: 20rem 3rem 3rem 3rem;
+}
+
+.color img {
+    width: 3rem;
+}
+
+.btn-tones {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+.row {
+    display: flex;
+    width: 80%;
+    margin: 1rem auto;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.img-col {
+    display: flex;
+    margin: 1rem;
+    padding: 1em;
+    text-align: center;
+}
+
+.img-col img {
+    border-radius: 10px;
+}
+
+.content-col {
+    display: flexbox;
+    max-width: 70ch;
+    min-width: 40ch;
+    margin: 1rem;
+    padding: 1em;
+    border-radius: 10px;
+    line-height: 1.5rem;
+}
+
+.content-col h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hsl h3 {
+    margin-top: 1rem;
+}
+
+.easy-color .row {
+    background: hsl(240, 50%, 40%);
+}
+
+.easy-color .content-col {
+    background: hsl(240, 50%, 60%);
+    color: hsl(0, 0%, 98%);
+}
+
+.jewel .row {
+    background: hsl(350, 63%, 40%);
+}
+
+.jewel .content-col {
+    background: hsl(178, 67%, 35%);
+    color: hsl(0, 0%, 98%);
+}
+
+.pastel .row {
+    background: hsl(239, 74%, 84%);
+}
+
+.pastel .content-col {
+    background: hsl(31, 47%, 83%);
+    color: hsl(0, 0%, 2%);
+}
+
+.earth .row {
+    background: hsl(22, 32%, 44%);
+}
+
+.earth .content-col {
+    background: hsl(97, 25%, 51%);
+    color: hsl(0, 0%, 98%);
+}
+
+.neutral .row {
+    background: hsl(18, 13%, 41%);
+}
+
+.neutral .content-col {
+    background: hsl(63, 40%, 77%);
+    color: hsl(0, 0%, 2%);
+}
+
+.fluorescent .row {
+    background: hsl(326, 81%, 55%);
+}
+
+.fluorescent .content-col {
+    background: hsl(111, 95%, 51%);
+    color: hsl(0, 0%, 2%);
+}
+
+.shades .row {
+    background: hsl(0, 0%, 25%);
+}
+
+.shades .content-col {
+    background: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 98%);
+}
+
+footer {
+    background:hsl(0, 0%, 50%);
+    text-align: center;
+}
+
+footer .fa {
+    font-size: 8rem;
+    border: 1px solid hsl(0, 0%, 2%);
+    padding: 1rem;
+}
+
+.fa:hover {
+    background-color: hsl(0, 0%, 98%);
+}
+
+@media only screen and (max-width: 1200px) {
+    nav ul {
+        width: 50%;
+        background: hsla(0, 0%, 2%, .75);
+        position: absolute;
+        top: 7rem;
+        right: 0;
+        z-index: 5;
+        display: none;
+    }
+
+   nav ul li {
+       display: block;
+       margin: 1rem;
+       padding: 1ream;
+   }
+
+   nav ul li a{
+       color: hsl(0, 0%, 98%);
+   }
+
+   nav ul li a:hover {
+       background-color: hsl(0, 0%, 50%);
+   }
+
+   nav .fa {
+       display: block;
+       cursor: pointer;
+   }
+
+   .colors {
+       flex-direction: column;
+       align-content: center;
+   }
+
+   .color{
+       display: flex;
+       width: 100%;
+       padding: 1rem;
+   }
+
+   .color img {
+       width: 2rem;
+   }
+
+   .row {
+       flex-direction: column;
+       justify-content: center;
+   }
+
+   .img-col img {
+       width: 100%;
+   }
+
+   .img-col,
+   .content-col {
+       margin: 1rem auto;
+   }
+
+   .btn-tones {
+       flex-wrap: wrap;
+   }
+
+   h1{
+       font-size: 3rem;
+   }
+}    
